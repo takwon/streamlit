@@ -212,7 +212,7 @@ def generate_response(messages):
 #####################################################
 ###                       UI                      ###
 #####################################################
-st.image('images/AI-Ro image.png')
+st.image('AI-Ro image.png')
 
 # 화면에 보여주기 위해 챗봇의 답변을 저장할 공간 할당
 if 'generated' not in st.session_state:
