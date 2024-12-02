@@ -199,24 +199,6 @@ def create_prompt(query):
 # 위의 create_prompt 함수가 생성한 프롬프트로부터 챗봇의 답변을 만드는 함수.
 def generate_response(messages):
 
-
-
-
-    # 문서 로드 및 분할
-    splits = load_docs('Radionuclides.txt')
-
-    # 벡터 저장소 생성
-    vectorstore = create_store_vectorstore(splits)
-
-    # RAG 체인 생성
-    qa_chain = create_rag_chain(vectorstore)
-
-    # 질문에 대한 답변 생성
-    result = qa_chain({"query": messages})
-
-    st.subheader("답변:")
-    st.write(result["result"])
-
     completion = openai.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=messages,
