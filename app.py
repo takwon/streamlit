@@ -12,6 +12,7 @@ import xmltodict
 import openai
 import streamlit as st
 from streamlit_chat import message
+from rag_functions import load_docs, create_store_vectorstore, create_rag_chain
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
@@ -42,7 +43,6 @@ def get_current_rad(location, unit="uSv/h"):
 
     return json.dumps(xmltodict.parse(contents))
 
-system_msg =[]
 
 functions = [
     {
@@ -62,7 +62,7 @@ functions = [
     },
 
 ]
-system_prompt = []
+
 system_prompt ="""
 당신은 회사 전용 다기능 AI 비서입니다. 사용자가 특정 요청을 입력하면, 각 요청에 따라 적합한 역할을 수행하세요. 다음은 사용자가 입력할 주요 트리거와 해당 기능별 역할입니다. 다른 개인적인 질문에는 답변하지 않는다.:
 
@@ -203,7 +203,7 @@ def generate_response(messages):
         model="gpt-3.5-turbo",
         messages=messages,
         functions=functions,
-        temperature=0.4,
+        temperature=0.1,
         max_tokens=500
     )
     response_message = completion.choices[0].message
@@ -215,13 +215,6 @@ def generate_response(messages):
 
 
         function_name = response_message.function_call.name
-        #if function_name == "reverse_roll":
-        #    pjb_file = st.file_uploader('회의내용을 업로드 해주세요.', key="회의내용")
-        #    out = st.empty()
-        #    if pjb_file:
-        #        pjb_txt = StringIO(pjb_file.getvalue().decode('utf-8')).read()
-        #        out.write('성공!!')
-
         function_to_call = available_functions[function_name]
         function_args = json.loads(response_message.function_call.arguments)
         function_response = function_to_call(
@@ -314,19 +307,7 @@ examFile = st.sidebar.file_uploader('문제출제 내용(txt)을 업로드 해�
 out = st.sidebar.empty()
 if examFile:
     save_uploaded_file('./', examFile)
-
-    with st.spinner("처리 중..."):
-        # 문서 로드 및 분할
-        splits = load_docs(examFile.name)
-
-        # 벡터 저장소 생성
-        vectorstore = create_store_vectorstore(splits)
-
-        # RAG 체인 생성
-        qa_chain = create_rag_chain(vectorstore)
-
-        # 벡터DB 생성 완료
-        out.write('파일을 성공적으로 업로드하였습니다.')
+    out.write('파일을 성공적으로 업로드하였습니다.')
 
 st.sidebar.info(
     "3. 발전소 주변 환경방사선 정보"
@@ -334,4 +315,3 @@ st.sidebar.info(
 st.sidebar.info(
     "4. PJB 반론자 역할"
 )
-
