@@ -12,7 +12,6 @@ import xmltodict
 import openai
 import streamlit as st
 from streamlit_chat import message
-from rag_functions import load_docs, create_store_vectorstore, create_rag_chain
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
