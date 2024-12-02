@@ -5,3 +5,7 @@ pandas
 numpy
 streamlit
 streamlit_chat
+Chroma
+load_dotenv
+TextLoader
+langchain_community
