@@ -11,3 +11,4 @@ TextLoader
 langchain_community
 matplotlib
 audio_recorder_streamlit
+langchain_openai
