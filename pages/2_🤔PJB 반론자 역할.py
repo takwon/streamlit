@@ -1,6 +1,6 @@
 ##### 기본 정보 입력 #####
 import streamlit as st
-import wavfile
+#import wavfile
 # audiorecorder 패키지 추가
 from audio_recorder_streamlit import audio_recorder
 # OpenAI 패키지 추가
