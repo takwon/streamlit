@@ -11,8 +11,8 @@ import streamlit as st
 from streamlit_chat import message
 import xml.etree.ElementTree as ET
 
-#openai.api_key = st.secrets["OPENAI_API_KEY"]
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+#openai.api_key = os.environ["OPENAI_API_KEY"]
 
 plt.rcParams['font.family'] ='Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] =False
