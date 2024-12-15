@@ -10,4 +10,4 @@ load_dotenv
 TextLoader
 langchain_community
 matplotlib
-audio_recorder
+audio_recorder_streamlit
