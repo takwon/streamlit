@@ -1,0 +1,552 @@
+{
+ "nuclides": [
+    {
+  "name": "트리튬 (Tritium)",
+  "symbol": "3H",
+  "half_life": "12.3년",
+  "specific_radioactivity": "3.59×10^14 Bq/g",
+  "radiation_type": {
+    "type": "β선",
+    "maximum_keV": "18.6 keV",
+    "average_keV": "5.7 keV"
+  },
+  "general_information": {
+    "physical_form": "가스 상태로 존재 가능하며, 일반적인 물과 같이 무색, 무취임. 산소와 반응하여 트리튬수증기 (HTO) 형태로 존재.",
+    "production": [
+      "상층 대기권에서 우주방사선이 공기 중의 질소와 반응하여 발생",
+      "원자로에서 6Li과 중성자의 핵반응에 의하여 생성",
+      "핵실험 과정에서도 발생"
+    ],
+    "reference": "월성원전은 캐나다(달링턴 원전)에 이어 세계 2번째로 산업용 삼중수소 생산 시작. 국제핵융합실험로(ITER) 등 핵융합 반응을 이용한 원자로 실험이 확대됨에 따라 소비량 증가 예상."
+  },
+  "usage": {
+    "domestic_licensed_quantity": {
+      "sealed": "1.4x10^11 Bq",
+      "open": "8.8x10^13 Bq"
+    },
+    "main_use": [
+      "핵융합 연료나 자발광 선원 등 연구용 및 산업용으로 활용",
+      "생명공학 연구, 신약 개발 등의 분야에서 신진대사를 조사하는 연구에 주로 사용(추적자)",
+      "비상구 표지등, 항공기 조정판, 게이지, 자발광 페인트, 시계 등 다양한 자발광 기구에 사용"
+    ],
+    "utilization_principle": "표지등의 작동원리: 트리튬에서 발생되는 자발전자가 트리튬을 담고 있는 용기의 표면에 코팅되어 있는 형광체와 반응하여 발광을 일으킴",
+    "shielding_information": "수 mm의 알루미늄으로도 충분히 막을 수 있음",
+    "handling_cautions": "평균에너지 약 6 keV의 매우 낮은 저에너지 베타선을 방출하는 핵종이므로 직접 방사선에 의한 외부피폭의 우려는 거의 없음"
+  },
+  "safety_management": {
+    "exempted_quantity": "109 Bq, 106 Bq/g 이하",
+    "quantity_to_be_reported": "1013 Bq 이하",
+    "emission_standards": {
+      "exhaust": "3x10^3 Bq/m3",
+      "drain": "4x10^7 Bq/m3 (트리튬수)"
+    },
+    "radiation_exposure": {
+      "annual_intake_limit": "1x10^9 Bq (흡입), 1x10^9 Bq (섭취)",
+      "derived_air_concentration": "3x10^5 Bq/m3",
+      "internal_radiation_exposure": "대부분 삼중수소화 된 물을 섭취함으로서 발생, 드물긴 하지만 가스 상의 삼중수소의 흡입에 의해서도 발생 가능. 물의 경우 약 480 MBq의 방사능을 섭취 또는 흡입할 경우 20 mSv의 내부피폭선량에 해당됨. 가스상의 경우 그 위해도가 물 보다 훨씬 낮아 약 10 TBq의 방사능을 흡입해야 종사자의 연간 선량한도인 20 mSv에 도달."
+    }
+  },
+    {
+      "name": "탄소-11 (Carbon-11)",
+      "symbol": "11C",
+      "properties": {
+        "half_life": "20.4분",
+        "specific_radioactivity": "3.1×10^19 Bq/g",
+        "radiation_type": "γ선 (511 keV)"
+      },
+      "general_info": {
+        "physical_form": "방사성의약품 형태의 액체 또는 기체",
+        "production": "사이클로트론에서 14N 핵종과 양성자의 핵반응에 의해 생성",
+        "reference": "양전자방출 핵종임. 양전자단층촬영(PET)에 주로 사용됨 (짧은 반감기로 인해 사용실적은 아직 없음)"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 1.3x10^15 Bq",
+        "main_uses": "의료용으로 환자의 체내진단에 주로 사용됨",
+        "utilization_principle": "환자에게 정맥주사로 투여한 후 양전자단층촬영(PET) 장치를 활용하여 물질의 분포를 형상화함",
+        "shielding_information": "납으로 차폐시 반가층은 6mm임",
+        "handling_cautions": "취급 시에는 차폐물을 활용하여 외부피폭을 최소화하여야 함"
+      },
+      "safety_management": {
+        "exempted_quantity": "106 Bq, 101 Bq/g 이하",
+        "quantity_to_be_reported": "1010 Bq 이하",
+        "emission_standards": "배기 2x10^4 Bq/m3, 배수 3x10^7 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 6x10^9 Bq(흡입), 8x10^8 Bq(섭취), 유도공기중농도: 3x10^6 Bq/m3. 흡입, 섭취, 피부접촉, 외부피폭을 통한 피폭에 주의하여야 함. 액체상의 경우 약 8.3x10^8 Bq의 방사능을 섭취할 경우 20 mSv의 내부피폭선량에 해당됨, 가스상의 경우에는 약 6.3x10^9 Bq의 방사능을 흡입해야 종사자의 연간 선량한도인 20 mSv에 이름."
+      }
+    },
+    {
+      "name": "카본-14 (Carbon-14)",
+      "symbol": "14C",
+      "properties": {
+        "half_life": "5730년",
+        "specific_radioactivity": "1.65×10^11 Bq/g",
+        "radiation_type": "β선 (최대: 157 keV, 평균: 49 keV)"
+      },
+      "general_info": {
+        "physical_form": "이산화탄소, 일산화탄소 등 기체 상태로 존재 가능. 방사성동위원소로서 연구개발 등에 사용하는 경우 대부분 유기화합물 형태",
+        "production": "상층 대기권에서 우주방사선(중성자)과 공기 중의 질소와 반응하여 발생. 원자로에서 질소, 탄소, 산소 혼합물과 중성자의 핵반응에 의해 생성. 핵실험 과정에서도 발생",
+        "reference": "지구생태계 상의 14C의 총 방사능은 약 1.1 x 10^19 Bq 정도이고 대부분은 바다에 분포. 자연 상의 탄소 존재비는 12C 99%, 13C 1%, 14C 0.0000000001%임"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "밀봉: 4.7 x 10^7 Bq, 개봉: 4.1 x 10^11 Bq",
+        "main_uses": "생명공학 연구, 신약 개발 등의 분야에서 신진대사를 조사하는 연구에 주로 사용(추적자). 탄소화합물 중의 포함된 14C의 조성비를 측정하여 그 물질의 연대를 추정하는 탄소연대측정",
+        "utilization_principle": "추적자 이용원리: 신약 등 물질에 14C 핵종을 주입하여 물질의 인체 내의 신진대사 연구에 이용",
+        "shielding_information": "수 mm의 알루미늄으로도 충분히 막을 수 있음",
+        "handling_cautions": "평균에너지 약 49 keV의 매우 낮은 저에너지 베타선을 방출하는 핵종이므로 직접 방사선에 의한 외부피폭의 우려는 거의 없음"
+      },
+      "safety_management": {
+        "exempted_quantity": "107 Bq, 104 Bq/g 이하",
+        "quantity_to_be_reported": "1011 Bq 이하",
+        "emission_standards": "배기 1 x 10^4 Bq/m3 (이산화물), 배수 1 x 10^6 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 3x10^7 Bq(흡입), 3x10^7 Bq(섭취), 유도공기중농도: 1 x 10^4 Bq/m3. 내부피폭의 피폭경로 중 섭취의 경우 유기화합물 형태가 가능성이 높으며, 흡입의 경우 증기, 이산화탄소, 일산화탄소의 형태가 모두 가능함. 약 34 MBq의 방사능을 섭취 또는 흡입할 경우 20 mSv의 내부피폭선량에 해당함."
+      }
+    },
+    {
+      "name": "불소-18 (Fluorine-18)",
+      "symbol": "18F",
+      "properties": {
+        "half_life": "1.83시간",
+        "specific_radioactivity": "3.52×10^18 Bq/g",
+        "radiation_type": "γ선 (511 keV)"
+      },
+      "general_info": {
+        "physical_form": "방사성의약품 형태의 액체 또는 기체",
+        "production": "사이클로트론에서 18O 핵종과 양성자의 핵반응에 의해 생성",
+        "reference": "양전자방출 핵종임. 양전자단층촬영(PET)에 주로 사용됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 8.6x10^14 Bq",
+        "main_uses": "의료용으로 환자의 체내진단에 주로 사용됨",
+        "utilization_principle": "환자에게 정맥주사로 투여한 후 양전자단층촬영(PET) 장치를 활용하여 물질의 분포를 형상화함",
+        "shielding_information": "납으로 차폐시 반가층은 6mm임",
+        "handling_cautions": "취급시에는 차폐물을 활용하여 외부피폭을 최소화하여야 함"
+      },
+      "safety_management": {
+        "exempted_quantity": "106 Bq, 101 Bq/g 이하",
+        "quantity_to_be_reported": "1010 Bq 이하",
+        "emission_standards": "배기 2x10^3 Bq/m3, 배수 1x10^7 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 4x10^8 Bq(흡입), 4x10^8 Bq(섭취), 유도공기중농도: 2x10^5 Bq/m3. 흡입, 섭취, 피부접촉, 외부피폭을 통한 피폭에 주의하여야 함. 액체상의 경우 약 4.1x10^8 Bq의 방사능을 섭취할 경우 20 mSv의 내부피폭선량에 해당되며, 가스상의 경우에는 약 2.2x10^8 Bq의 방사능을 흡입해야 종사자의 연간 선량한도인 20 mSv에 이름."
+      }
+    },
+    {
+      "name": "나트륨-24 (Sodium-24)",
+      "symbol": "24Na",
+      "properties": {
+        "half_life": "15시간",
+        "specific_radioactivity": "3.22×10^17 Bq/g",
+        "radiation_type": "β선 (최대: 1.39 MeV), γ선 (1.369 MeV, 2.75 MeV)"
+      },
+      "general_info": {
+        "physical_form": "주로 염화나트륨 형태로 존재. 방사성 염 용액 또는 고체",
+        "production": "원자로에서 23Na과 중성자의 핵반응에 의해 생성",
+        "reference": "염화나트륨 용액 중에 주입 사용"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 2.2x10^15 Bq",
+        "main_uses": "방사성 염 용액을 통해 섬유산업, 종이산업 및 기타 산업 분야에서 누출 검사 및 흐름 검사에 사용됨",
+        "utilization_principle": "흐름 및 누출 검사의 원리: 주입된 방사성 나트륨이 흐름을 따라 이동하면서 그 분포를 감지하여 누출 위치 또는 흐름 특성을 파악",
+        "shielding_information": "납으로 차폐시 반가층은 10mm임",
+        "handling_cautions": "강력한 β선 및 γ선 방출로 인해 취급시 강력한 차폐 필요"
+      },
+      "safety_management": {
+        "exempted_quantity": "105 Bq, 102 Bq/g 이하",
+        "quantity_to_be_reported": "1012 Bq 이하",
+        "emission_standards": "배기 3x10^3 Bq/m3, 배수 2x10^7 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 5x10^7 Bq(흡입), 5x10^7 Bq(섭취), 유도공기중농도: 2x10^4 Bq/m3. 내부피폭의 피폭경로 중 섭취 및 흡입에 주의하여야 함."
+      }
+    },
+    {
+      "name": "인-32 (Phosphorus-32)",
+      "symbol": "32P",
+      "properties": {
+        "half_life": "14.3일",
+        "specific_radioactivity": "1.06×10^16 Bq/g",
+        "radiation_type": "β선 (최대: 1710 keV, 평균: 694 keV)"
+      },
+      "general_info": {
+        "physical_form": "방사성 인산염 용액 또는 고체",
+        "production": "원자로에서 31P와 중성자의 핵반응에 의해 생성",
+        "reference": "방사성 인산염 중 인산염 용액 형태로 주로 사용됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 8.6x10^14 Bq",
+        "main_uses": [
+          "생명공학 연구, 신약 개발 등의 분야에서 DNA/RNA 마커로 주로 사용됨",
+          "의료용으로 암 조직 치료에 이용되기도 함"
+        ],
+        "utilization_principle": "DNA/RNA 마커의 원리: 표지된 인-32을 DNA 또는 RNA 시퀀스에 주입하여 위치 및 변화를 관찰",
+        "shielding_information": "수 mm의 알루미늄으로도 충분히 막을 수 있음",
+        "handling_cautions": "강력한 β선을 방출하는 핵종이므로 직접 방사선에 의한 외부피폭의 우려는 거의 없으나 내부피폭에 주의"
+      },
+      "safety_management": {
+        "exempted_quantity": "10^6 Bq, 103 Bq/g 이하",
+        "quantity_to_be_reported": "10^11 Bq 이하",
+        "emission_standards": "배기 2x10^4 Bq/m3, 배수 1x10^7 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 1x10^10 Bq(흡입), 1x10^10 Bq(섭취), 유도공기중농도: 3x10^6 Bq/m3. 내부피폭의 피폭경로 중 섭취 및 흡입에 주의하여야 함. 약 1.3x10^10 Bq의 방사능을 섭취 또는 흡입할 경우 20 mSv의 내부피폭선량에 해당됨."
+      }
+    },
+ {
+      "name": "인-33 (Phosphorus-33)",
+      "symbol": "33P",
+      "properties": {
+        "half_life": "25.6일",
+        "specific_radioactivity": "5.72×10^15 Bq/g",
+        "radiation_type": "β선 (최대: 249 keV, 평균: 83 keV)"
+      },
+      "general_info": {
+        "physical_form": "방사성 인산염 용액 또는 고체",
+        "production": "원자로에서 32S와 중성자의 핵반응에 의해 생성",
+        "reference": "방사성 인산염 중 인산염 용액 형태로 주로 사용됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 2.6x10^14 Bq",
+        "main_uses": [
+          "생명공학 연구, 신약 개발 등의 분야에서 DNA/RNA 마커로 주로 사용됨",
+          "의료용으로 특정 암 조직의 표적 치료에 이용되기도 함"
+        ],
+        "utilization_principle": "DNA/RNA 마커의 원리: 표지된 인-33을 DNA 또는 RNA 시퀀스에 주입하여 위치 및 변화를 관찰",
+        "shielding_information": "수 mm의 알루미늄으로도 충분히 막을 수 있음",
+        "handling_cautions": "낮은 에너지 베타선을 방출하는 핵종이므로 외부피폭의 우려는 적으나 내부피폭에 주의"
+      },
+      "safety_management": {
+        "exempted_quantity": "106 Bq, 103 Bq/g 이하",
+        "quantity_to_be_reported": "1011 Bq 이하",
+        "emission_standards": "배기 2x10^4 Bq/m3, 배수 1x10^7 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 7x10^9 Bq(흡입), 7x10^9 Bq(섭취), 유도공기중농도: 2x10^5 Bq/m3. 내부피폭의 주요 피폭 경로는 섭취 및 흡입으로, 약 15 MBq의 방사능을 섭취 또는 흡입할 경우 20 mSv의 내부피폭선량에 해당됨."
+      }
+    },
+    {
+      "name": "황-35 (Sulphur-35)",
+      "symbol": "35S",
+      "properties": {
+        "half_life": "87.5일",
+        "specific_radioactivity": "1.58×10^15 Bq/g",
+        "radiation_type": "β선 (최대: 168 keV, 평균: 49 keV)"
+      },
+      "general_info": {
+        "physical_form": "대부분 액상의 유기화합물 형태",
+        "production": [
+          "상층 대기권에서 우주방사선(중성자)과 공기 중의 아르곤과 반응하여 발생",
+          "원자로에서 아르곤과 중성자의 핵반응에 의하여 생성"
+        ],
+        "reference": "32P, 33P 핵종과 함께 유전자 서열분석 등 생명공학 연구에 광범위하게 활용"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 4.8×10^11 Bq",
+        "main_uses": [
+          "S는 아미노산의 주요 구성성분이므로 주로 아미노산의 흡수 및 대사연구에 이용",
+          "35S는 32P와 함께 유전자 염기서열 분석에도 활용"
+        ],
+        "utilization_principle": "추적자 이용원리: 세포 내의 DNA 및 RNA에 35S 핵종을 표지하여 유전자 연구에 이용",
+        "shielding_information": "수 mm의 플라스틱으로도 충분히 막을 수 있음",
+        "handling_cautions": "평균에너지 약 49 keV의 매우 낮은 저에너지 베타선을 방출하는 핵종이므로 직접 방사선에 의한 외부피폭의 우려는 거의 없음"
+      },
+      "safety_management": {
+        "exempted_quantity": "108 Bq, 105 Bq/g 이하",
+        "quantity_to_be_reported": "1012 Bq 이하",
+        "emission_standards": {
+          "exhaust": "1x10^3 Bq/m3",
+          "drain": "5x10^6 Bq/m3"
+        },
+        "radiation_exposure": {
+          "annual_intake_limit": "3x10^8 Bq (흡입), 1x10^8 Bq (섭취)",
+          "derived_air_concentration": "1x10^5 Bq/m3",
+          "internal_radiation_exposure": "베타선의 에너지가 낮아 외부피폭의 가능성은 작으나 개봉선원 취급에 따른 오염방지 및 제염이 요구되며, 휘발성이 있는 경우 후드 내에서 작업이 필요"
+        }
+      }
+    },
+    {
+      "name": "요오드 (I-123)",
+      "symbol": "123I",
+      "properties": {
+        "half_life": "13.2시간",
+        "specific_radioactivity": "7.14×10^16 Bq/g",
+        "radiation_type": "γ선 (159 keV)"
+      },
+      "general_info": {
+        "physical_form": "표지화합물 형태의 액체 또는 근접치료용 형태의 고체",
+        "production": [
+          "사이클로트론에서 123Te52 핵종과 양성자와의 핵반응에 의하여 생성",
+          "사이클로트론에서 121Sb51 핵종과 알파입자와의 핵반응에 의하여 생성"
+        ],
+        "reference": "베타선을 방출하지 아니하는 감마선원으로 주요 방출에너지가 159keV로 체내영상을 얻기에 좋으나, 생산하는 과정에서 불순물이 발생할 수 있고 가격이 비쌈"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉 : 1.7x10^13 Bq",
+        "main_uses": "의료용으로 환자의 체내진단에 주로 사용됨",
+        "utilization_principle": "요오드에서 발생하는 감마선으로 갑상선 기능 검사에 사용됨",
+        "shielding_information": "납으로 차폐시 반가층은 1mm임",
+        "handling_cautions": "취급시에는 차폐물을 활용하여 외부피폭을 최소화 하여야 함"
+      },
+      "safety_management": {
+        "exempted_quantity": "107 Bq, 102 Bq/g 이하",
+        "quantity_to_be_reported": "1011 Bq 이하",
+        "emission_standards": "배기 9x10^2 Bq/m3, 배수 3x10^6 Bq/m3",
+        "radiation_exposure": "연간섭취한도 : 2x10^8 Bq (흡입), 1x10^8 Bq (섭취), 유도공기중농도 : 8x10^4 Bq/m3"
+      }
+    },
+    {
+      "name": "요오드 (I-125)",
+      "symbol": "125I",
+      "properties": {
+        "half_life": "59.408일",
+        "specific_radioactivity": "6.5×10^14 Bq/g",
+        "radiation_type": "γ선 (27 keV, 35.5 keV)"
+      },
+      "general_info": {
+        "physical_form": "표지화합물 형태의 액체, 고체형태 금속, 스테인리스 스틸로 제작된 선원용기에 담겨짐",
+        "production": "원자로 시설과 같은 중성자 조사시설에서 만들어지거나 사이클로트론과 같은 가속기로 가속된 입자를 조사하여 생성",
+        "reference": "125I는 저에너지 γ선을 방출하고 반감기가 길어 체내영상을 얻는 데는 적합하지 않으나, 항원이나 항체에 표지가 잘 되어 체외검사(in vitro)에 사용됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉 : 4.9x10^11 Bq, 밀봉 5.6x10^11 Bq",
+        "main_uses": "체외검사(in vitro) : 혈액이나 소변 중에 극히 미량으로 존재하는 생리적활성물질이나 투여된 약제의 정량검사에 주로 사용됨",
+        "utilization_principle": "I-125를 핀 형태로 제작하여 체내에 삽입하여 암조직에 직접조사하여 암을 치료함(Brachy-therapy), 방사성핵종을 표지화하여 미량의 물질을 측정함",
+        "shielding_information": "유리 : 0.1 mm, 납 : < 1 mm (1/2), < 1mm(1/10), 플라스틱 : 0.1 mm, 철 : < 1 mm (1/2), < 1mm(1/10)",
+        "handling_cautions": "γ선이 방출되므로 외부피폭에 의한 피폭에 주의"
+      },
+      "safety_management": {
+        "exempted_quantity": "106 Bq, 103 Bq/g 이하",
+        "quantity_to_be_reported": "1010 Bq 이하",
+        "emission_standards": "배기 : 1.0×10^1 Bq/m³, 배수 : 5.0×10^4 Bq/m³",
+        "radiation_exposure": "연간섭취한도 : 3x10^6 Bq(흡입), 1x10^6 Bq(섭취), 유도공기중농도 : 1x10^3 Bq/m³"
+      }
+    },
+  {
+      "name": "요오드 (I-131)",
+      "symbol": "131I",
+      "properties": {
+        "half_life": "8.0일",
+        "specific_radioactivity": "4.61×10^15 Bq/g",
+        "radiation_type": {
+          "beta": "606 keV",
+          "gamma": "365 keV"
+        }
+      },
+      "general_info": {
+        "physical_form": "Sodium(Na) 또는 Potassium(K)에 표지된 무색의 액체 또는 입자로 제작되어 젤라틴(gelatine) 캡슐에 봉입된 형태",
+        "production": [
+          "원자로에서 중성자의 핵반응에 의하여 생성",
+          "235U의 자발적인 붕괴로 인하여 생성"
+        ],
+        "reference": "표적 장기인 갑상선에서의 옥소 섭취율이 타 장기에 비해 4,000∼5,000배 높아 갑상선 치료에 효율적임"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 1.3x10^14 Bq",
+        "main_uses": "갑상선 질환의 치료 및 진단에 사용됨",
+        "utilization_principle": "요오드에서 발생하는 베타선으로 갑상선 질환의 치료에 주로 사용됨",
+        "shielding_information": "납으로 차폐시 반가층: 3mm",
+        "handling_cautions": "취급시에는 납등의 차폐물을 활용하여 외부피폭을 최소화 하여야 함"
+      },
+      "safety_management": {
+        "exempted_quantity": "106 Bq, 102 Bq/g 이하",
+        "quantity_to_be_reported": "1010 Bq",
+        "emission_standards": {
+          "exhaust": "9 Bq/m3",
+          "drain": "3x10^4 Bq/m3 (모든 화합물의 경우)"
+        },
+        "radiation_exposure": {
+          "annual_intake_limit": "2x10^6 Bq (흡입), 9x10^5 Bq (섭취)",
+          "derived_air_concentration": "8x10^2 Bq/m3",
+          "notes": "요오드의 경우 휘발성이 있으므로 가스 상의 요오드의 흡입에 의한 피폭에 주의하여야 함. 액체상의 경우 약 9.1x10^5 Bq의 방사능을 섭취할 경우 20 mSv의 내부피폭선량에 해당되며, 가스상의 경우에는 약 1.8x10^6 Bq의 방사능을 흡입해야 종사자의 연간 선량한도인 20 mSv에 이름."
+        }
+      }
+    },
+{
+      "name": "우라늄 (U-235)",
+      "symbol": "235U",
+      "properties": {
+        "half_life": "7.04×10^8년",
+        "specific_radioactivity": "8.0×10^4 Bq/g",
+        "radiation_type": {
+          "alpha": "4,400 keV",
+          "gamma": "186 keV"
+        }
+      },
+      "general_info": {
+        "physical_form": "중금속 물질로서 UO2 펠렛 등 세라믹 형태로 변환되어 핵연료로 사용",
+        "production": "우라늄 핵종은 자연적으로 존재하며, 사용을 위해 0.7%에서 4∼5%까지 농축",
+        "reference": "농축 과정에서 발생한 감손우라늄은 차폐용기, 무기 제작에 활용"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "740 ton",
+        "main_uses": "원자로의 핵연료, 우라늄탄 제작, 차폐용기 제작",
+        "utilization_principle": "열중성자를 흡수하여 핵분열반응을 일으키며 전기 생산에 사용",
+        "shielding_information": "수 mm의 납판으로 충분",
+        "handling_cautions": "알파선을 방출하여 내부피폭의 위험 높음"
+      },
+      "safety_management": {
+        "exempted_quantity": "104 Bq, 101 Bq/g 이하",
+        "emission_standards": "배기: 1x10^-1 Bq/m3, 배수: 1x10^4 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 3x10^4 Bq (흡입), 4x10^5 Bq (섭취)"
+      }
+    },
+    {
+      "name": "우라늄 (U-238)",
+      "symbol": "238U",
+      "properties": {
+        "half_life": "4.47×10^9년",
+        "specific_radioactivity": "1.24×10^4 Bq/g",
+        "radiation_type": {
+          "alpha": "4,196 keV",
+          "gamma": "15 keV"
+        }
+      },
+      "general_info": {
+        "physical_form": "중금속 물질로서 UO2 펠렛 등 세라믹 형태로 변환되어 핵연료로 사용",
+        "production": "우라늄 핵종은 자연적으로 존재하며, 사용을 위해 0.7%에서 4∼5%까지 농축",
+        "reference": "농축 과정에서 발생한 감손우라늄은 차폐용기, 무기 제작에 활용"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "740 ton",
+        "main_uses": "원자로의 핵연료, 우라늄탄 제작, 차폐용기 제작",
+        "utilization_principle": "차폐용기 및 항공기 무게중심용 물질로 사용",
+        "shielding_information": "수 mm의 납판으로 충분",
+        "handling_cautions": "알파선을 방출하여 내부피폭의 위험 높음"
+      },
+      "safety_management": {
+        "exempted_quantity": "104 Bq, 101 Bq/g 이하",
+        "emission_standards": "배기: 1x10^-1 Bq/m3, 배수: 2x10^4 Bq/m3",
+        "radiation_exposure": "연간섭취한도: 3x10^4 Bq (흡입), 5x10^5 Bq (섭취)"
+      }
+    },
+   {
+      "name": "우라늄 (U-238)",
+      "symbol": "238U",
+      "properties": {
+        "half_life": "4.47×10^9년",
+        "specific_radioactivity": "1.24×10^4 Bq/g",
+        "radiation_type": {
+          "alpha": "4,196 keV",
+          "gamma": "15 keV"
+        }
+      },
+      "general_info": {
+        "physical_form": "중금속 물질로서 UO2 펠렛 등의 세라믹으로 변환되어 핵연료로 사용",
+        "production": "광석, 토양, 물 등에서 자연적으로 존재하는 우라늄 핵종",
+        "reference": "감손우라늄은 차폐용기, 무기 등의 제작에 활용되며 238U의 붕괴계열 핵종에는 여러 핵종이 포함됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "약 740 ton",
+        "main_uses": "발전용 및 연구용 원자로의 핵연료로 사용",
+        "utilization_principle": "차폐용기 및 항공기 무게중심용 물질로서 방사선 차폐능력과 밀도가 높은 특성을 이용",
+        "shielding_information": "수 mm의 납판으로 충분히 막을 수 있음",
+        "handling_cautions": "알파선을 방출하므로 내부피폭의 위험이 높음"
+      },
+      "safety_management": {
+        "exempted_quantity": "104 Bq, 101 Bq/g 이하",
+        "quantity_to_be_reported": "300 g 이하",
+        "emission_standards": "배기: 1x10^-1 Bq/m3, 배수: 2x10^4 Bq/m3",
+        "radiation_exposure": {
+          "annual_intake_limit": "3x10^4 Bq (흡입), 5x10^5 Bq (섭취)",
+          "derived_air_concentration": "1x10^1 Bq/m3",
+          "notes": "알파선 방출로 인한 내부피폭의 심각한 영향 및 화학적 독성에 주의 필요"
+        }
+      }
+    },
+{
+      "name": "디스프로슘 (Dy-165)",
+      "symbol": "165Dy",
+      "properties": {
+        "half_life": "2.33시간",
+        "specific_radioactivity": "3.33×10^19 Bq/g",
+        "radiation_type": "β선 (최대: 1.28 MeV)"
+      },
+      "general_info": {
+        "physical_form": "액체 (표지화합물)",
+        "production": "원자로에서 중성자 조사로 생성",
+        "reference": "단 반감기 특성으로 Y-90 대체 사용 추세"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 2.8x10^13 Bq",
+        "main_uses": "핵의학분야 치료 (류마티스 관절염치료)에 사용되는 방사성의약품",
+        "utilization_principle": "정맥주사 후 스캔을 통한 진단/치료",
+        "shielding_information": "수 mm의 알루미늄으로 충분히 막을 수 있음",
+        "handling_cautions": "단반감기 베타선을 방출하므로 외부피폭의 우려가 적음"
+      },
+      "safety_management": {
+        "exempted_quantity": "106 Bq, 103 Bq/g 이하",
+        "quantity_to_be_reported": "1010 Bq 이하",
+        "emission_standards": {
+          "exhaust": "1x10^3 Bq/m3",
+          "drain": "6x10^6 Bq/m3"
+        },
+        "radiation_exposure": {
+          "annual_intake_limit": "2x10^8 Bq (흡입), 2x10^8 Bq (섭취)",
+          "derived_air_concentration": "1x10^5 Bq/m3"
+        }
+      }
+    },
+   {
+      "name": "니켈 (Ni-63)",
+      "symbol": "63Ni",
+      "properties": {
+        "half_life": "100.1년",
+        "specific_radioactivity": "2.1×10^12 Bq/g",
+        "radiation_type": "β선 (66 keV)"
+      },
+      "general_info": {
+        "physical_form": "고체형태 금속, 필름형태 또는 디스트 형태로 가공됨",
+        "production": "주로 원자로 시설과 같은 중성자 조사시설에서 만들어짐",
+        "reference": "주로 GC(Gas Chromatography)장비 내 ECD (Electron Capture Detector) 장비에 사용되며 유기화합물분석, 잔류농약검사 등의 용도로 사용됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": {
+          "sealed": "2.6x10^12 Bq",
+          "open": "1.4x10^9 Bq"
+        },
+        "main_uses": "유기화합물분석, 잔류농약검사",
+        "utilization_principle": "GC 장비에서 사용되는 Ni-63의 경우 방사성붕괴에 의해 발생되는 β선을 가열장치에 의해 기체상태로 변한 시료에 조사하여 이때 발생하는 특성 X선을 분석하여 함유원소 및 함유량을 측정함",
+        "shielding_information": "유리: < 0.1 mm, 플라스틱: 0.1 mm",
+        "handling_cautions": "β선이 방출되므로 외부피폭보다는 섭취나 흡입에 의한 피폭에 주의"
+      },
+      "safety_management": {
+        "exempted_quantity": "108 Bq, 105 Bq/g 이하",
+        "quantity_to_be_reported": "1012 Bq 이하",
+        "emission_standards": {
+          "exhaust": "2.0×10^2 Bq/m³",
+          "drain": "5.0×10^6 Bq/m³"
+        },
+        "radiation_exposure": {
+          "annual_intake_limit": "4x10^7 Bq (흡입), 1x10^8 Bq (섭취)",
+          "derived_air_concentration": "2x10^4 Bq/m³",
+          "notes": "현재 국내에서 사용되는 GC 장비는 완전방호형 장비로 특수공구에 의해서만 분해가 가능하므로 취급에 따른 피폭사고의 우려는 없음"
+        }
+      }
+    },
+   {
+      "name": "갈륨 (Ga-67)",
+      "symbol": "67Ga",
+      "properties": {
+        "half_life": "3.26일",
+        "specific_radioactivity": "2.21×10^16 Bq/g",
+        "radiation_type": "γ선 (93 keV, 184 keV, 300 keV)"
+      },
+      "general_info": {
+        "physical_form": "액체상(표지화합물)",
+        "production": "원자로 속에서 중성자를 조사하여 생성",
+        "reference": "핵의학 진단용으로 주로 사용됨"
+      },
+      "usage": {
+        "domestic_licensed_quantity": "개봉: 6.0x10^12 Bq",
+        "main_uses": "핵의학분야 진단(종양, 염증 등)에 사용되는 방사성의약품",
+        "utilization_principle": "정맥주사 후 스캔을 통한 진단",
+        "shielding_information": "납으로 차폐시 반가층은 1mm임",
+        "handling_cautions": "감마선을 방출하는 핵종으로 직접 방사선에 의한 외부피폭의 우려는 없으나 피부오염, 흡입, 섭취 등의 내부피폭에 유의해야 함"
+      },
+      "safety_management": {
+        "exempted_quantity": "105 Bq, 10 Bq/g 이하",
+        "quantity_to_be_reported": "109 Bq 이하",
+        "emission_standards": {
+          "exhaust": "1x10^3 Bq/m3",
+          "drain": "4x10^6 Bq/m3"
+        },
+        "radiation_exposure": {
+          "annual_intake_limit": "2x10^8 Bq(흡입), 1x10^8 Bq(섭취)",
+          "derived_air_concentration": "8x10^4 Bq/m3",
+          "notes": "모든 화합물의 경우 약 110 MBq의 방사능을 섭취 또는 흡입할 경우 20 mSv의 내부피폭선량에 해당되며, 인체의 장기 중 폐에 선량이 가장 높게 나타남"
+        }
+      }
+    }
+  ]
+}
+
