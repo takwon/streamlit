@@ -9,3 +9,4 @@ Chroma
 load_dotenv
 TextLoader
 langchain_community
+matplotlib
