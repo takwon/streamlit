@@ -14,4 +14,3 @@ audio_recorder_streamlit
 langchain_openai
 gtts
 wavfile
-RetrievalQA
