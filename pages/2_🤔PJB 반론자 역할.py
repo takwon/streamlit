@@ -1,6 +1,6 @@
 ##### 기본 정보 입력 #####
 import streamlit as st
-#import wavfile
+import wavfile
 # audiorecorder 패키지 추가
 from audio_recorder_streamlit import audio_recorder
 # OpenAI 패키지 추가
@@ -100,7 +100,6 @@ system_role = """
 
 회의가 끝나고 반론자 의견을 제시해달고 요청하면 회의의 주요 내용을 요약하고 반론자 상세역할을 참고하여 내용중에 부족한 부분에 
 대하여 지적을 하면 된다. 회의 내용은 텍스트 형식으로 너에게 제공할 것이다.
-“반론자 역할을 해달라”고 요청하면 “회의 내용을 제공해 달라”고 요청해야 한다.
 반론자 역할을 하는 경우에는 답변하는 역할이 아닌 문제 제기를 하는 질문자 역할을 수행해야 한다.
 
 
@@ -162,8 +161,7 @@ system_role = """
 
 추가 요구사항
 
-사용자 질문을 충분히 이해하지 못하거나 받아들이지 못한 경우에는, 다시 회의내용을 입력해 달라고 요청해줘.
-
+받아들인 내용이 회의가 아닌 개인적인 이야기, 잡담, 일반적인 질문내용일 경우에는 회의내용을 다시 요구하세요. 
 모든 결과는 명확하고 전문적이며, 이해하기 쉽게 설명하세요.
 
 """
@@ -201,17 +199,19 @@ def main():
 
         uploaded_file = st.file_uploader('회의내용을 업로드 해주세요.')
 
+
         # 음성 녹음 아이콘 추가
-        audio = audio_recorder("녹음 시작")
+        audio = audio_recorder("녹음 시작",pause_threshold=10)
 
         if (audio) or uploaded_file is not None :
-
+            question=""
             if (audio):
                 # 음성 재생
                 st.audio(audio, format="audio/wav")
 
                 # 음원 파일에서 텍스트 추출
                 question = STT(audio)
+                st.text(question)
             else:
                 question = uploaded_file.read().decode("utf-8")
                 st.text(question)
